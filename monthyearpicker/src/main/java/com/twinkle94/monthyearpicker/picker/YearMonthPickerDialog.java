@@ -365,6 +365,7 @@ public class YearMonthPickerDialog implements Dialog.OnClickListener {
 
                 SimpleDateFormat monthDate = new SimpleDateFormat("MMMM", Locale.getDefault());
 
+                calendar.set(Calendar.DAY_OF_MONTH, 1);
                 calendar.set(Calendar.MONTH, months[i]);
                 String monthName = monthDate.format(calendar.getTime());
 
